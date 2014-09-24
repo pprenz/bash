@@ -1,0 +1,3 @@
+http://ubuntu/mysite
+u:omdadmin
+p:omd

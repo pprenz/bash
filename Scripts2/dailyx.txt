@@ -1,0 +1,35 @@
+python
+dt = datetime.datetime.now().strftime("%Y-%m-%d %H:%M")
+
+
+--job for portal standby restart  && (unfuddle ticket)  -done
+--unfuddle ticket for removing testpuppet loadbalancer -done
+--Git push --done
+--create rackspace loadbalancer lbcloud0 for prod. and unfuddle ticket 
+--point screenapps to prod.
+
+run storeproc before skill selection [scrap.MoveKidsOnWhoAreWorkingOnPredecessorsDuringTestPrep ] --moves half of the kids to another skill
+
+run storeproc is we want to move all the kids to new skill [    scrap.MoveALLKidsOnDuringTestPrep ]
+    
+	
+******************************************************	
+	download accessment results job....add email with users that were processed or on the job itself adding the description.
+******************************************************
+	
+	Read!Docs@so1
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+-Install cyberduck from http://cyberduck.ch/
+-After installation is complete: 
+	click: File > Open Connection 
+		select: SFTP (SSH File Transfer Protocol)
+		server: wclouda.schoolofone.net
+		Port: 22
+		Username: so1docs
+		Password: ********
+		*select checkbox "Save Password" and click connect
+		*Mac users "Add to Keychain"
+		
+		A window will prompt if the connection is successful: Make sure to click "allow" and click on "always"
+		
+		YOU SHOULD NOW HAVE ACCESS TO THE SFTP SERVER.

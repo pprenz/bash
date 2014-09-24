@@ -1,0 +1,44 @@
+
+verify ----/etc/puppet/files/release/opt/so1/fabfile.py
+
+=====================================================================
+ dt = datetime.datetime.now().strftime("%Y-%m-%d %H:%M") --python time without seconds.
+------------------------------------------------------------------------
+  
+8 instances of Tornado portal running on the cloud# servers
+ 
+2 instances of memcache running on each cloud server (1 session & 1 data)
+---/usr/bin/memcached -p 11213 -m 100 -u nobody -l 10.179.110.14
+
+2 instances of Nginx running on each cloud server (master & worker)
+
+ ________________________________________________________________________
+|------------------------------------------------------------------------|
+|````````````````````````````````````````````````````````````````````````|
+|~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|
+|````````````````````````````````````````````````````````````````````````|
+|------------------------------------------------------------------------|
+|________________________________________________________________________|
+	TODO
+--automatically start hamachi after reboot.
+--automatically start hudson after reboot
+--email results for Auto_Assessment_IDs.
+--Rsync servers to backup TS01 and hudson
+Completed
+-restart TS01
+-Auto_Assigment IDs shell/python sftp and verify if file exist
+--backup and restore hudson
+--clean up compression jobs from hudson
+--Auto_IDs (need scheduling by deedee)
+
+ |++++++++++++++++++++++++|
+ |  @abcd1234@fatcow.com  |
+ |  @Abcd1234@so1         |
+ |++++++++++++++++++++++++|
+ 
+ 
+ 
+ ****************************************************************************
+ linux security
+ denyHost
+ UFW

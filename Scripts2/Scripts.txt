@@ -1,0 +1,52 @@
+#!/bin/sh
+echo "Running on $DB"
+
+ssh -i /root/.ssh/ts01_key Administrator@10.1.215.101 "cd /cygdrive/j/Horizon_sftp/ && cmd /k sftp_horizon.cmd"
+
+retval=$?
+if [ $retval -ne '0' ]; then
+    return 1
+else
+  ssh -i ~/.ssh/ts01_key Administrator@10.1.215.101 'cp "/cygdrive/j/aspire/master.csv" "/cygdrive/j/aspire/archives/master `date +%m%d%y`.csv"'
+fi
+
+# The Data load
+python /opt/so1/release/sql_exec.py "hudson.ImportRawAssessmentResults"
+retval=$?
+if [ $retval -eq '0' ]; then
+#!python
+##### CONFIGURABLE SECTION BEGINS #####
+FROM="alerts@so1live.com"
+TO="phil@so1live.com"
+BCC=""
+SUBJECT="[DS09A] Ready To Start Scheduling!" 
+BODY="""
+
+The assessment results were downloaded from Horizon and entered into the DB. We're ready to start scheduling.
+
+
+-------------------
+Note: This is an automated email.
+"""
+
+###### CONFIGURABLE SECTION ENDS ######
+
+import sys
+sys.path.append("/opt/so1/emailer")
+import emailer
+
+emailer.send_mail(
+    server_addr="smtp.gmail.com",
+    server_port="587",
+    username="alerts@so1live.com",
+    password="@Abcd1234",
+    from_name=FROM,
+    from_addr=FROM,
+    to_addr=TO,
+    bcc_addr_csv=BCC,
+    subject=SUBJECT,
+    body=BODY
+)
+else
+ return $retval
+fi

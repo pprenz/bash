@@ -1,0 +1,8 @@
+$file
+$y=1
+$res
+
+var=`wc -l $file | sed 's/\([0-9]*\).*/\1/'` | echo $sub
+ sub=$(($var - $y)) |
+
+sub=$(($x - $y))

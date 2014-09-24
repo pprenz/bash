@@ -1,0 +1,34 @@
+
+---Rackspace  -----
+ubuntu linux
+10.179.98.235 - util0.schoolofone.net
+10.130.191.130  -  db.schoolofone.net
+10.179.116.12   -  cloud0.schoolofone.net
+10.179.114.65   -  cloud1.schoolofone.net
+10.179.110.14   -  cloud2.schoolofone.net
+10.179.98.149   -  cloud3.schoolofone.net
+10.179.104.207  -  cloud4.schoolofone.net
+
+loadBalancers
+10.179.117.100  -  puppet.schoolofone.net (so1live.com)
+184.106.100.71  -  lbcloud0.schoolofone.net (prod.so1live.com)
+50.56.5.162     -  lclcoud1.schoolofone.net (dev.so1live.com)
+
+windows
+wclouda.schoolofone.net
+wcloudb.schoolofone.net
+
+dedicated windows boxes
+db.schoolofone.net
+db01.schoolofone.net
+
+10.179.98.235 - util0
+10.130.191.130  -  
+10.179.116.12   -  cloud0.schoolofone.net
+10.179.114.65   -  cloud1.schoolofone.net
+10.179.110.14   -  cloud2.schoolofone.net
+10.179.98.149   -  cloud3.schoolofone.net
+10.179.104.207  -  cloud4.schoolofone.net
+
+loadBalancers
+10.179.117.100  -  puppet.schoolofone.net (so1live.com)

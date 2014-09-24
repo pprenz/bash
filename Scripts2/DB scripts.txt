@@ -1,0 +1,31 @@
+------Check TEST IDs----------------------------------
+select * from scrap.LatestRawAssessmentResults
+select * from dbo.Assessments
+
+select * from dbo.Assessments where AspireTestID between 30740 and 30745
+
+select * from dbo.Assessments where AspireTestID = #
+
+select * from scrap.AspireTestsDelta
+
+select * from dbo.Assessments where AspireTestID = 30307
+select * from dbo.Assessments where AssessmentName = '8.G.02_01'
+
+update dbo.Assessments set AssessmentName =	'8.N.05_07'	where AspireTestID = 25690
+
+update dbo.Assessments set RowUpdatedDate =	'2011-05-02 15:20:29.053' where AssessmentId = 30307
+-----------------------------------------------------
+
+update dbo.Assessments set RowUpdatedDate =  '	2010-09-17 15:20:29.053' 	where AssessmentId = 	23463
+
+********************insert phatom assessment results data *****************************
+insert into dbo.AssessmentResults(StudentId, AssessmentId,
+AssessmentDate, result)
+values (203456470, 3904, '2011-05-25', 0)
+****************************************************************************************
+
+
+-horizon issue with http and https
+--update unfuddle ticket for network upgrade
+---close ticket for so1tx and create a new one.
+----find out about https with vincent and olgierd

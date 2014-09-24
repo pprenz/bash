@@ -1,0 +1,27 @@
+GIT
+
+local
+git branch --get branch 
+git status
+git checkout #branch_name --to change to branch
+git pull
+
+git push origin #branch_name --push/create new branch to unffudle.f
+
+
+1. create fakeQA
+2. push to Git
+3. pull into dev. env.
+4. do QA on this fakeQA.
+5. merge with prod & master
+6. 
+
+
+++++++++++++++++++++++++++++++
+2:26 PM 4/20/2011
+Portal Branch Git Push.
+
+1. Mondays we push Git/portal 1 (it trigger portal 2)
+2. Wendsday we push Git/portal 3(it triggers portal 4)
+
+--tkt #451

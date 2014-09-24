@@ -1,0 +1,58 @@
+
+--rsync -auvzn 
+rsync -auvz /home/portalscreenshots/ wclouda:/home/so1docs/Portal_Screenshots/
+
+*****************TODO****************************
+
+--create jenkins job to take screenshots of teachers. --done
+--scp back from wclouda and b
+
+-enable test Ids. --------------------------------------done
+-create QA branch!
+-conf call with rackspace ------------------------------done
+--cyberduck for Mickey 
+--MAP instructions...to deedee
+
+
+**********************************
+MSSQL 2008
+JD8Y6-HQG69-P9H84-XDTPG-34MBB
+--------------------------------
+MSSQL 2008 R2
+GYF3T-H2V88-GRPPH-HWRJP-QRTYB
+***********************************
+
+MAP config.
+1. configure servers at Tweed
+2. setup link on laptops to link back to tweed servers.
+3. 
+
+********
+
+*********************
+--jenkins job for DIT test for ticket 424
+--updated Jay's email
+--google groups and accounts
+--unfuddle tickets
+--deliver QA branch to prod
+--upload and replaced blank pdf
+--meeting with rackspace
+--serial key for mssql 2008 r2 (test and verified)
+
+linked servers for ts03
+mssql 2008 on prod. for weekend
+update unfuddle ticket
+follow up with rackspace ticket
+adam's sca network update
+************************
+--upgraded jenkins
+--created branch
+--richard's - bullets for an intern (tech duties)
+
+***************************************
+scrum
+-send the hw and staging file to vincent
+-the portal was getting timeouts
+-working with hollander on the screen
+---i will close those tickets.
+-planning to do an update the network tomorrow afternoon

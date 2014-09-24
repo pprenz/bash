@@ -1,0 +1,12 @@
+
+===================================================================================
+make so1web sudo
+
+    /etc/odbc.ini
+    and maybe portal_source_code_loc /etc/so1-web.ini
+    odbc.ini will have the ip addresses
+
+    call it [so1staging] under odbc.ini
+    and use DSN=so1staging under etc/so1-web.ini
+    look at the other entries and figure out what the logging and stuff should use
+======================================================================================
