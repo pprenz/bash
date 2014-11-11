@@ -7,3 +7,9 @@ git checkout #branch_name --to change to branch
 git pull
 
 git push origin #branch_name --push/create new branch to unffudle.f
+
+++++++++++++++++
+Portal Branch Git Push.
+
+1. Mondays we push Git/portal 1 (it trigger portal 2)
+2. Wendsday we push Git/portal 3(it triggers portal 4)
