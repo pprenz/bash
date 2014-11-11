@@ -7,21 +7,9 @@ cd /opt/so1/hudson/
 --Hudson/Jenkins---
 java -jar hudson.war (or jenkins.war)  > logfile.txt 2>&1 &
 
---new jenkins on util0
->>>>>>>> location - /usr/share/jenkins/jenkins.war
 
 java -jar jenkins.war --httpPort=-1 --httpsPort=443 --httpsKeyStore=path/to/keystore --httpsKeyStorePassword=keystorePassword > logfile.txt 2>&1 &
  *****works under root----->>> java -jar jenkins.war --httpPort=-1 --httpsPort=443 > logfile.txt 2>&1 &
-
------------------------------
-New Jenkins 
--@util0
-u: phil
-@T.....
----------
-u: admin
-p: Hudsonadmin@so1 
-  
 ========================================================
 
 ---NGINX---
@@ -45,11 +33,6 @@ ssh root@util0.schoolofonev.net "cd /opt/so1/release && /usr/bin/fab -R prod -i 
 ssh root@util0.schoolofone.net "cd /opt/so1/release && /usr/bin/fab -R standby -i ~/.ssh/so1web_so1cloud_rsa clear_data_cache" --for standby 
 ===================================================
 
------------connection points from cloud servers to DB----------------------
-    open /etc/odbc.ini and /etc/odbcinst.ini
-    the path to the pyodbc file should be listed in one of those 2 files
-***************************************************
-
 *******************DenyHosts**************************************
 
 /etc/init.d/denyhosts start
@@ -58,16 +41,3 @@ DENYHOSTS_BIN = "/usr/bin/denyhosts.py"
 DENYHOSTS_LOCK = "/var/run/denyhosts.pid"
 DENYHOSTS_CFG = "/usr/share/denyhosts/denyhosts.cfg"
 ========================================================================
----Cygwin SSH---
-net stop sshd
-net start sshd
-==================================================
-
-Mifi 4G
-UN: MIFI4510L B820
-PW: 99000046708228
-
-
-
-
-
