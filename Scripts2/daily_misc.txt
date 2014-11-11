@@ -2,6 +2,17 @@
 /etc/init.d/haproxy {status|start|stop|restart}
 /etc/haproxy/haproxy.cfg --config file
 ==================================================
+--rsync -auvzn 
+rsync -auvz /home/portalscreenshots/ wclouda:/home/so1docs/Portal_Screenshots/
+
+**********************************
+MSSQL 2008
+JD8Y6-HQG69-P9H84-XDTPG-34MBB
+--------------------------------
+MSSQL 2008 R2
+GYF3T-H2V88-GRPPH-HWRJP-QRTYB
+***********************************
+==================================================
 
 cd /opt/so1/hudson/
 --Hudson/Jenkins---
