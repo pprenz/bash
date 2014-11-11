@@ -13,32 +13,3 @@ verify ----/etc/puppet/files/release/opt/so1/fabfile.py
 2 instances of Nginx running on each cloud server (master & worker)
 
  ________________________________________________________________________
-|------------------------------------------------------------------------|
-|````````````````````````````````````````````````````````````````````````|
-|~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|
-|````````````````````````````````````````````````````````````````````````|
-|------------------------------------------------------------------------|
-|________________________________________________________________________|
-	TODO
---automatically start hamachi after reboot.
---automatically start hudson after reboot
---email results for Auto_Assessment_IDs.
---Rsync servers to backup TS01 and hudson
-Completed
--restart TS01
--Auto_Assigment IDs shell/python sftp and verify if file exist
---backup and restore hudson
---clean up compression jobs from hudson
---Auto_IDs (need scheduling by deedee)
-
- |++++++++++++++++++++++++|
- |  @abcd1234@fatcow.com  |
- |  @Abcd1234@so1         |
- |++++++++++++++++++++++++|
- 
- 
- 
- ****************************************************************************
- linux security
- denyHost
- UFW
